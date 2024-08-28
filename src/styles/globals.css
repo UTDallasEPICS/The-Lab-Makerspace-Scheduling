@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.centered-contents {
+	justify-content: center;
+}
+
+.primary {
+	background-color: #99cc66;
+}
