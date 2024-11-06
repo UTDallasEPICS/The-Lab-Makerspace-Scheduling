@@ -3,6 +3,7 @@ import { useSession, signIn, signOut } from 'next-auth/react';
 import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faMeetup, faTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { useRouter } from 'next/router';
 
 interface HeaderProps {
 	title: string;
@@ -10,6 +11,8 @@ interface HeaderProps {
 
 export default function Header(props: HeaderProps) {
 	const { data: session } = useSession();
+  const router = useRouter();
+
 	return (
 		<header>
 			<nav
@@ -37,7 +40,7 @@ export default function Header(props: HeaderProps) {
 							</span>
 						) : (
 							<span className="text-sm font-semibold leading-6 text-gray-900 mr-3">
-								Welcome Guest, <button onClick={() => signIn("keycloak")}>Log in</button>
+								Welcome Guest, <button onClick={() => { router.push('Login') }}>Log in</button>  
 							</span>
 						)}
 						<a href="https://www.facebook.com/thelabms" className="text-gray-900 mr-2">

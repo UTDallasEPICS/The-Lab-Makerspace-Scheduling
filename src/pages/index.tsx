@@ -10,11 +10,9 @@ export const getServerSideProps: GetServerSideProps = async () => {
 
 	const conformedEvents = events.map((calEvent) => {
 		const fullCalEvent: EventInput = {
-			title: calEvent.name,
-			//start: new Date(calEvent.start).toISOString(),
-	     start: calEvent.start,
-			//end: new Date(calEvent.end).toISOString(),
-	     end: calEvent.end,
+		  title: calEvent.name,
+	    start: calEvent.start,
+	    end: calEvent.end,
 			url: `/events/${calEvent.id}`,
 		};
 
@@ -23,7 +21,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
 
   return {
 		props: {
-			events: conformedEvents,
+			events: {},
 		},
 	};
 };
