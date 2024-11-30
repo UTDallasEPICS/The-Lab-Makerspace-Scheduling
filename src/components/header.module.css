@@ -1,0 +1,7 @@
+.primary {
+	background-color: #99cc66;
+}
+
+tbody > tr:nth-child(odd) {
+	background: #e7e7e7;
+}
