@@ -1,7 +1,14 @@
+# Overview 
+This project is a user friendly reservation and calendar system to display events and their details. This system is part of a larger project focused on integrating their calendar web application with their kiosk system.The goal is to enable the application to handle tasks typically performed by a receptionist, including​ checking in users, providing event details, and RSVPing for upcoming events​ using a key fob sign in system​.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
-
+Clone the repository. <br>
+Run npm install to download all the necessary packages and dependencies. <br>
+Create a .env file and fill it with the your desired values. Ensure you edit the values in userStore.json to ensure that the jwt values can be interpreted with your JWT_SECRET. <br>
+Run docker-compose up. <br>
+Also run npx prisma migrate dev to initialize the database.
 First, run the development server:
 
 ```bash
@@ -11,9 +18,6 @@ yarn dev
 # or
 pnpm dev
 ```
-
-Create a .env file and fill it with the your desired values. Ensure you edit the values in userStore.json to ensure that the jwt values can be interpreted with your JWT_SECRET.
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
@@ -38,3 +42,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Tech Stack 
+ 
+Front end: React, TailWind.css <br>
+Backend: REST APIs <br>
+Meta: Next.js
+Other: Docker, Postman <br>
+
+Deployment status: Not deployed
+
