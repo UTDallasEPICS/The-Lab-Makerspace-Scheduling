@@ -43,6 +43,12 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+## Functional Requirements
+R1. The application must display a calendar to the user.
+R2. The application must allow the user to view events currently in the system.
+R3. The application must allow users to click the RSVP button to do this action.
+R4. The application should take a key fob input upon RSVP.
+
 ## Tech Stack 
  
 Front end: React, TailWind.css <br>
