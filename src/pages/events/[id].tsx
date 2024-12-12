@@ -8,7 +8,7 @@ import nookies from 'nookies';
 import { env } from 'process';
 // I shoud make a custom event object interface...
 
-const API_URL = env.API_URl;
+const API_URL = env.API_URl || 'https://localhost:3000';
 interface EventInterface {
 	id: number;
 	name: string;
