@@ -53,9 +53,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Tech Stack 
  
-Front end: React, TailWind.css <br>
-Backend: REST APIs <br>
-Meta: Next.js
+Front end: React.js, TailWind.css <br>
+Backend: Next.js <br>
 Other: Docker, Postman <br>
 
 Deployment status: Not deployed
