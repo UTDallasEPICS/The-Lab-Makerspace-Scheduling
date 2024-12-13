@@ -3,6 +3,12 @@ This project is a user friendly reservation and calendar system to display event
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Functional Requirements
+The calendar page has a calendar view with all of events that will be happening that month, along with the start time. The user can click on a specific event to get more information about the event. This calendar can also be switched to weekly view, or a list of all events scheduled.<br>
+The Event Details page has specific information about a event including event name, description, start and end time, exclusivety, and location. At the bottom of this page is a RSVP button to register for events.<br>
+When the RSVP button is clicked, the user is asked to scan their fob id on a reader. This reader take the member id and send it to be validated.<br>
+If the validation is successful, the RSVP goes through.<br>
+
 ## Getting Started
 Clone the repository. <br>
 Run npm install to download all the necessary packages and dependencies. <br>
@@ -43,11 +49,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Functional Requirements
-R1. The application must display a calendar to the user.<br>
-R2. The application must allow the user to view events currently in the system.<br>
-R3. The application must allow users to click the RSVP button to do this action.<br>
-R4. The application should take a key fob input upon RSVP.<br>
+
 
 ## Tech Stack 
  
