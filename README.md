@@ -6,7 +6,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 Clone the repository. <br>
 Run npm install to download all the necessary packages and dependencies. <br>
-Create a .env file and fill it with the your desired values. Ensure you edit the values in userStore.json to ensure that the jwt values can be interpreted with your JWT_SECRET. <br>
+Create a .env file, copy over .env.example, and fill it with the your desired values. Ensure you edit the values in userStore.json to ensure that the jwt values can be interpreted with your JWT_SECRET. <br>
 Run docker-compose up. <br>
 Also run npx prisma migrate dev to initialize the database.
 First, run the development server:
